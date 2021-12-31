@@ -1,0 +1,266 @@
+/*CSS IS FROM v1 NO LONGER IN USE*/
+
+:root {
+  --page-color: #99ccff;
+  --button-color: #99eebb;
+  --link-color: #357b70;
+  --link-color-darker: #0f453c;
+  --hover-color: #fff299;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  padding: 20px;
+  width: 100%;
+  height: 250px;
+  clear: both;
+  display: flex;
+  align-items: center;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+body {
+  background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-05.jpg);
+  background-color: var(--page-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main__text {
+  max-width: 625px;
+  margin: 0 auto;
+}
+
+.main__text li {
+  list-style-type: none;
+  padding: 2px;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 26px;
+}
+
+h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 22px;
+}
+
+h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+
+span {
+  color: #ecbd11;
+  font-weight: bold;
+}
+
+.profile__portrait {
+  float: left;
+  display: block;
+  padding-right: 20px;
+  width: 250px;
+  height: 275px;
+  border-radius: 50%;
+  margin-bottom: 100px;
+}
+
+.button,
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--button-color);
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.5s all;
+}
+
+.button_secondary {
+  background-color: var(--button-color);
+  color: var(--link-color;);
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: var(--hover-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-color-darker);
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item {
+  display: inline-block;
+  width: 33%;
+  border-radius: 10%;
+}
+
+.grid__item {
+  background-color: var(--button-color);
+  width: auto;
+  min-height: auto;
+  margin: 0;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+.grid__item:last-child {
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+  border-radius: 5%;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #66cc00;
+  }
+  50% {
+    fill: #ffaa80;
+  }
+  100% {
+    fill: #ff4d6a;
+  }
+}
+
+@keyframes color-change2 {
+  0% {
+    fill: #ffff80;
+  }
+  50% {
+    fill: #ff9999;
+  }
+  100% {
+    fill: #ff3333;
+  }
+}
+
+.strawberry {
+  animation: 4s color-change2 infinite alternate linear;
+}
+
+.apple {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes leaf-move {
+  from {
+    transform: translate(279px, 322px);
+  }
+  to {
+    transform: translate(283px, 322px) rotate(10deg);
+  }
+}
+
+@keyframes leaf-move2 {
+  from {
+    transform: translate(286px, 324px);
+  }
+  to {
+    transform: translate(290px, 324px) rotate(10deg);
+  }
+}
+
+@keyframes leaf-move3 {
+  from {
+    transform: translate(273px, 341px);
+  }
+  to {
+    transform: translate(274px, 341px) rotate(10deg);
+  }
+}
+
+.leaf {
+  animation: 0.35s leaf-move infinite alternate linear;
+}
+
+.leaf2 {
+  animation: 0.35s leaf-move2 infinite alternate linear;
+}
+
+.leaf3 {
+  animation: 0.35s leaf-move3 infinite alternate linear;
+}
