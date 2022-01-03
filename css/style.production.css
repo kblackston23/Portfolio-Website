@@ -13,6 +13,7 @@
 .page-header {
   background-color: #fff;
   padding: 20px;
+  padding-right: 40px;
   width: 100%;
   height: 250px;
   clear: both;
@@ -41,8 +42,6 @@ body {
   background-image: url("https://live.staticflickr.com/65535/51789895915_02448beeda_h.jpg");
   background-color: #fff;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.2;
@@ -197,7 +196,7 @@ a:focus {
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 35px;
 }
 
 .grid {
