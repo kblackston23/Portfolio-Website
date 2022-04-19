@@ -145,7 +145,7 @@ a:focus {
 
 .grid__item {
   display: inline-block;
-  width: 33%;
+  width: 50%;
   border-radius: 10%;
 }
 
