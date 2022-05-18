@@ -55,23 +55,35 @@
     </header>
     <br /><br />
     <main>
-      <div class="main__text">
+      <div class="contact__text">
         <h1 class="title">Contact me!</h1>
-        <p>
-          <button action="mailto:kelsieblackston@gmail.com">Email me!</button>
-        </p>
+        <form id="contact" action="mailto:kelsieblackston@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
+          <h4>Send me an email</h4>
+          <fieldset id="field">
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset id="field">
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset id="field">
+            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+          </fieldset><br />
+          <fieldset id="field">
+            <button type="submit" value="submit" id="button" class="grow">Submit</button>
+          </fieldset>
+        </form>
       </div>
     </main>
     <br />
     <footer class="page-footer">
       <h2>Find me on</h2>
       <div class="social-media">
-        <a href="https://github.com/kblackston23"
-          ><img src="img/github.svg" alt="Github"
-        /></a>
-        <a href="http://linkedin.com"
-          ><img src="img/linkedin.svg" alt="LinkedIn"
-        /></a>
+        <a href="https://github.com/kblackston23">
+          <img src="img/github.svg" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/kelsie-blackston23/">
+          <img src="img/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://twitter.com/kblackston23">
+          <img src="img/twitter.svg" alt="Twitter"></a>
       </div>
     </footer>
   </body>
